@@ -1,0 +1,6 @@
+.env/
+venv/
+__pycache__
+Key.py
+Imagenes_Procesadas/
+random_forest_model.pkl

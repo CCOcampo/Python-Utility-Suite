@@ -1,0 +1,6 @@
+wave
+pyaudio
+keyboard
+pyautogui
+pyperclip
+groq
