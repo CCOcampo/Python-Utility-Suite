@@ -2,6 +2,8 @@
 
 Este proyecto es una **herramienta poderosa** diseñada para generar datos ficticios, ideal para pruebas de análisis y ciencia de datos. Con una interfaz simple e intuitiva, puedes crear datasets simulados en **formato Excel** para utilizar en tus experimentos y análisis sin preocuparte por datos sensibles o privados. ¡Úsalo para testear modelos, practicar consultas SQL, visualizar datos, y mucho más!
 
+**La aplicación está disponible en Streamlit Cloud en el siguiente enlace: [Generador de Datos Falsos](https://python-utility-suite-datageneratorttsrt.streamlit.app/)**
+
 ## 🛠 Herramientas Utilizadas
 
 - **[Streamlit](https://streamlit.io/)**: Framework para aplicaciones web rápidas y fáciles de desarrollar en Python.
