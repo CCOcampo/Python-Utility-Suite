@@ -1,7 +1,6 @@
 # Remover Fondo de Imágenes 🎨🖼️
 
 ¡Bienvenido al proyecto **Remover Fondo de Imágenes**! Este código te permite eliminar fácilmente el fondo de cualquier imagen con solo unos clics. Es ideal para aquellos que buscan automatizar la tarea de eliminar fondos en fotografías para presentaciones, publicaciones o cualquier proyecto visual.
-parasaber
 
 ## ¿Cómo usarlo? 🚀
 
