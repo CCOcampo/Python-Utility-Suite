@@ -1,28 +1,72 @@
-# Streamlit Project with Docker
+# Interactive Dictionary and Cost Management App
 
-This document outlines the implementation of a Streamlit application packaged within a Docker container. The project demonstrates how to create, deploy, and share a web application for data analysis using Streamlit and Docker.
+<img src="streamlit-page.png" width=90%> <br>
 
-## Project Overview
+This repository contains a Streamlit application for managing a dictionary of products, including their definitions and prices. The application allows users to upload a CSV file, add new entries, calculate costs, and generate words based on user input. The project is containerized using Docker for easy deployment.
 
-The Streamlit application allows users to upload a CSV file containing product information, add new entries to a dictionary, perform cost calculations, and generate new words based on user input. By containerizing this application with Docker, we ensure that it can be easily deployed and accessed from any environment without compatibility issues.
+## Project Structure
 
-### Key Features
+The repository includes the following files in the `Interactive-dictionary` folder:
 
-- **Upload Database**: Users can upload a CSV file to populate the application's dictionary.
+- **Dockerfile**: Contains instructions for building the Docker image for the application.
+- **docker-compose.yml**: Defines services and configurations for running the application with Docker Compose.
+- **app.py**: The main application file where the Streamlit app is defined.
+- **utilities.py**: Contains utility functions, including the `nth_letter_word` function used in the app.
+- **requirements.txt**: Lists the Python dependencies required to run the application.
+- **activities.py**: A simplified version of the solution is provided in this file.
+- **data/ejemplo.csv**: A sample CSV file located in the `data` folder that can be used for testing the application.
+
+## Features
+
+- **Upload Database**: Users can upload a CSV file containing product information (Product, Description, Price).
 - **Add New Entries**: Users can add new words, definitions, and prices to the dictionary.
 - **Cost Calculation**: The app allows users to select products and calculate the total cost including tax.
-- **Word Generation**: Users can input words to generate new ones based on certain criteria.
+- **Word Generation**: Users can input words to generate new ones based on specified criteria.
 
-## Advantages of Using Docker
+## Getting Started
 
-1. **Consistency Across Environments**: Docker ensures that the application runs the same way regardless of where it is deployed (local machine, cloud server, etc.). This eliminates the "it works on my machine" problem.
+To run this application locally using Docker, follow these steps:
 
-2. **Simplified Deployment**: Once the application is containerized, deploying it becomes straightforward. You can run the same Docker image on any platform that supports Docker.
+### 1. Clone the Repository
 
-3. **Isolation**: Each Docker container runs in its own isolated environment. This means that dependencies and configurations do not interfere with other applications running on the same host.
+If you haven't already cloned this repository, do so with:
 
-4. **Scalability**: Docker makes it easier to scale applications horizontally by running multiple containers. This is particularly useful for applications that experience variable loads.
+```bash
+git clone https://github.com/CCOcampo/Python-Utility-Suite.git
+cd Python-Utility-Suite/Interactive-dictionary
+```
 
-5. **Portability**: The application can be easily shared with others by distributing the Docker image. Users can run the app without needing to install Python or any dependencies manually.
+### 2. Build the Docker Image
 
-6. **Version Control**: Docker images can be versioned, allowing developers to roll back to previous versions of the application if necessary.
+Build the Docker image using the following command:
+
+```bash
+docker build -t my-streamlit-app .
+```
+
+### 3. Run the Docker Container
+
+After building the image, run it using:
+
+```bash
+docker run -p 8501:8501 my-streamlit-app
+```
+
+### 4. Access the Application
+
+Once the container is running, open your web browser and navigate to:
+
+```bash
+http://localhost:8501
+```
+
+You should see your Streamlit application running.
+
+## Testing with Sample Data
+
+A sample CSV file `example.csv` is included in the data folder. You can use this file to test the application's functionality by uploading it through the provided interface.
+
+## Conclusion
+
+This project serves as a foundational template for developing and deploying applications that utilize data analysis in Python. The use of Docker simplifies deployment and ensures consistency across different environments.
+Feel free to explore, modify, and extend this application as needed!
