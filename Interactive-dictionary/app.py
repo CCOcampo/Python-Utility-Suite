@@ -26,7 +26,7 @@ st.markdown(
 
 st.title("Dictionary, Costs, and Word Management")
 
-st.markdown("### Upload Database")
+st.markdown("### Upload Database:")
 uploaded_file = st.file_uploader("Upload a CSV file with format: Product, Description, Price", type="csv")
 
 if uploaded_file is not None:
