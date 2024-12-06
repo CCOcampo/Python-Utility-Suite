@@ -1,6 +1,6 @@
 # Interactive Dictionary and Cost Management App
 
-<img src="streamlit-page.png" width=90%> <br>
+<img src="docs/streamlit-page.png" width=90%> <br>
 
 This repository contains a Streamlit application for managing a dictionary of products, including their definitions and prices. The application allows users to upload a CSV file, add new entries, calculate costs, and generate words based on user input. The project is containerized using Docker for easy deployment.
 
